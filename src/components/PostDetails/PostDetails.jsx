@@ -17,16 +17,12 @@ const Post = () => {
 
   useEffect(() => {
     dispatch(getPost(id));
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   useEffect(() => {
     if (post) {
       dispatch(getPostsBySearch({ search: 'none', tags: post?.tags.join(',') }));
     }
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [post]);
 
   if (!post) return null;
@@ -63,9 +59,7 @@ const Post = () => {
           </Typography>
           <Typography variant="body1">{moment(post.createdAt).fromNow()}</Typography>
           <Divider style={{ margin: '20px 0' }} />
-
-          <Typography variant="body1"><strong>More Featues Coming Soon!</strong></Typography>
-
+          <Typography variant="body1"><strong>More Features Coming Soon</strong></Typography>
           <Divider style={{ margin: '20px 0' }} />
           <CommentSection post={post} />
           <Divider style={{ margin: '20px 0' }} />
@@ -85,7 +79,7 @@ const Post = () => {
                 <Typography gutterBottom variant="subtitle2">{name}</Typography>
                 <Typography gutterBottom variant="subtitle2">{message}</Typography>
                 <Typography gutterBottom variant="subtitle1">Likes: {likes.length}</Typography>
-                <img src={selectedFile} alt="" width="200px" />
+                <img src={selectedFile} width="200px" />
               </div>
             ))}
           </div>
@@ -96,3 +90,4 @@ const Post = () => {
 };
 
 export default Post;
+
