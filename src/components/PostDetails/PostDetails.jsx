@@ -64,16 +64,8 @@ const Post = () => {
           <Typography variant="body1">{moment(post.createdAt).fromNow()}</Typography>
           <Divider style={{ margin: '20px 0' }} />
 
-          <Typography variant="body1"><strong>Chef page - coming soon!</strong></Typography>
-          <Typography variant="body1"><strong>Consumer page - coming soon!</strong></Typography>
-          <Typography variant="body1"><strong>Realtime Chat - coming soon!</strong></Typography>
-          <Typography variant="body1"><strong>softwareDining Rating System - coming soon!</strong></Typography>
-          <Typography variant="body1"><strong>devDining - coming soon!</strong></Typography>
-          <Typography variant="body1"><strong>devWars - coming soon!</strong></Typography>
-          <Typography variant="body1"><strong>softwareWeeklyTop5 - coming soon!</strong></Typography>
-          <Typography variant="body1"><strong>softwareCookout - coming soon!</strong></Typography>
-          <Typography variant="body1"><strong>devRecipie - coming soon!</strong></Typography>
-          <Typography variant="body1"><strong>chefsChoice - coming soon!</strong></Typography>
+          <Typography variant="body1"><strong>More Featues Coming Soon!</strong></Typography>
+
           <Divider style={{ margin: '20px 0' }} />
           <CommentSection post={post} />
           <Divider style={{ margin: '20px 0' }} />
