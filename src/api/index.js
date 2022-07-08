@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://softwarediningserver.azurewebsites.net/' });
+const API = axios.create({ baseURL: 'mongodb+srv://frank123:frank123@softwaredining.hg3mx.mongodb.net/?retryWrites=true&w=majority' });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
